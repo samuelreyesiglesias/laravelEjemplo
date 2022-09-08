@@ -3,7 +3,7 @@ hi  id:{{$id}}
 
 @foreach($test as $t)
 
-{{$t->tarea}}<br>
+{{$t->tarea}} {{$t->nombre}} <br>
 
 @endforeach
 
