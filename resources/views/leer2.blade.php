@@ -1,6 +1,6 @@
 Id Ejemplo get: {{$id}}
 <br>
-<table class='table'>
+<table cellspacing=10 cellpadding=10>
     <tr>
         <td>
             Task
