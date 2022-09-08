@@ -47,11 +47,36 @@ Route::get("ejemplo2",function(){
 });
 
  
+
+
+
+
+/*
+//Configurar  rutas
+ use App\Http\Controllers\ejemploController;
+
+ Route::get('/ejemplo', [ejemploController::class, 'index']);
+ Route::get('/leer', [ejemploController::class, 'leer']);
+ Route::get('/leer2/{id}', [ejemploController::class, 'leer2']);
+
+// or
+//Route::get('/ejemplo', 'App\Http\Controllers\ejemploController@index');
+
+
+
+
+Route::get("ejemplo2",function(){
+    return view("/ejemplo2/{id}",[ejemploController::class,"actionEjemplo"]);
+});
+
+
+/*******************************************************************************************/
+ 
 /*
  * 
  * Proceso de Creacion Proyecto laravel. INSTALAR LARAGON O COMPOSER EN PRIMER PASO:
  * 
-*1.)  instalar el proyecto con : composer create.project laravel/laravel nombre_del_proyecto
+*1.)  instalar el proyecto con : composer create-project laravel/laravel nombre_del_proyecto
 *2.) configurar servidor mysql: en archivo .env
 *3.) configurar rutas en archivo routes/web.php esto se debe hacer con la clase Route::get o con la que se necesite segun el metodo 
 *Http a utilizar
@@ -85,13 +110,59 @@ las vists se crean en recursos\views
 @endforeach
 
 
+ 
+
+
+
+
+Luego de clonar proyecto de git:
+
+Run composer install in the project root. It is a good idea to run composer update after that.
+
+
+To generate the key you can run the Laravel Artisan key generate command.
+php artisan key:generate
+
+
+For faster results you can use
+composer update --verbose --prefer-dist
+
+If composer install / composer update isn't working for you, try:
+composer install --ignore-platform-reqs
+composer update --ignore-platform-reqs
+
+After this you should be able to run "php artisan serve".
+
+
+
+ 
+
+When you are cloning a Laravel project from GitHub, you have to :
+
+Run composer install on your cmd or terminal
+Copy .env.example file to .env on the root folder
+Open your .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your configuration
+Run php artisan key:generate
+Run php artisan migrate
+Run php artisan serve
+Go to http://localhost:8000/
+and also run
+
+php artisan optimize
+
+
+
+
+
+https://postsrc.com/code-snippets/how-to-solve-larave-no-application-encryption-key-has-been-specified
+
+
+
 
 */
 
-
-
-
-
-
 ?>
+
+
+
 
