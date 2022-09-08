@@ -1,11 +1,28 @@
-hi  id:{{$id}}
+Id Ejemplo get: {{$id}}
 <br>
-
+<table>
+    <tr>
+        <td>
+            Task
+        </td>
+        <td>
+            Responsable
+        </td>
+    </tr>
 @foreach($test as $t)
 
-{{$t->tarea}} {{$t->nombre}} <br>
+
+    <tr>
+        <td>
+             {{$t->tarea}}
+        </td>
+        <td>
+            {{$t->nombre}} 
+        </td>
+    </tr>
 
 @endforeach
 
+</table>
 
  
