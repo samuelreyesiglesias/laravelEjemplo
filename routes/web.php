@@ -159,6 +159,18 @@ https://postsrc.com/code-snippets/how-to-solve-larave-no-application-encryption-
 
 
 
+PARRA MIGRAR DATOS O TABLAS A UNA BASE DE DATOS:
+php artisan migrate 
+
+CREAR TABLAS DE MIGRACION EN PROYECTO LARAVEL. 
+php artisan make:migration create_nombredetabla_table
+
+
+LISTAR LAS RUTAS:
+php artisan route:list
+
+
+
 */
 
 ?>
